@@ -37,6 +37,8 @@
   (re-frame/clear-subscription-cache!)
   (re-frame/dispatch-sync [::initialize-db])
   (breakpoints/init)
-  (mount-root))
+  (mount-root)
+  ::success)
 
-(init)
+(defonce run-at-app-startup
+  (init))
