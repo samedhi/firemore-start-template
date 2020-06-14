@@ -3,6 +3,7 @@
    [goog.dom :as goog.dom]
    [reagent.core :as reagent]
    [reagent.dom :as reagent.dom]
+   [re-frame.core :as re-frame]
    [zip-viewer.mui :as mui]))
 
 (defn main-panel []
@@ -16,6 +17,7 @@
     (reagent.dom/render [main-panel] el)))
 
 (defn ^:dev/after-load init []
+  (re-frame/clear-subscription-cache!)
   (mount-root))
 
 (init)
