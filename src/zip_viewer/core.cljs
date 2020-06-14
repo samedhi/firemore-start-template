@@ -1,3 +1,3 @@
 (ns zip-viewer.core)
 
-(println "Goodbye Heavens!")
+(println "Hello World")
