@@ -4,6 +4,7 @@
    [reagent.core :as reagent]
    [reagent.dom :as reagent.dom]
    [re-frame.core :as re-frame]
+   [zip-viewer.breakpoints :as breakpoints]
    [zip-viewer.mui :as mui]))
 
 (defn main-panel []
@@ -18,6 +19,7 @@
 
 (defn ^:dev/after-load init []
   (re-frame/clear-subscription-cache!)
+  (breakpoints/init)
   (mount-root))
 
 (init)
