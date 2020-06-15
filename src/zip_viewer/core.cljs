@@ -1,5 +1,6 @@
 (ns ^:figwheel-hooks zip-viewer.core
   (:require
+   [firemore.core :as firemore]
    [goog.dom :as goog.dom]
    [reagent.core :as reagent]
    [reagent.dom :as reagent.dom]
