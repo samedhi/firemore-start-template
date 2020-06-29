@@ -29,6 +29,7 @@
 (def checkbox  (mui->reagent "Checkbox"))
 (def chip  (mui->reagent "Chip"))
 (def circular-progress  (mui->reagent "CircularProgress"))
+(def collapse (mui->reagent "Collapse"))
 (def container (mui->reagent "Container"))
 (def dialog  (mui->reagent "Dialog"))
 (def divider  (mui->reagent "Divider"))
@@ -38,6 +39,7 @@
 (def grid-list  (mui->reagent "GridList"))
 (def icon-button  (mui->reagent "IconButton"))
 (def linear-progress  (mui->reagent "LinearProgress"))
+(def link (mui->reagent "Link"))
 (def list  (mui->reagent "List"))
 (def list-item  (mui->reagent "ListItem"))
 (def menu  (mui->reagent "Menu"))
@@ -57,13 +59,14 @@
 (def tab  (mui->reagent "Tab"))
 (def table  (mui->reagent "Table"))
 (def table-body  (mui->reagent "TableBody"))
+(def table-cell (mui->reagent "TableCell"))
+(def table-container (mui->reagent "TableContainer"))
 (def table-footer  (mui->reagent "TableFooter"))
+(def table-head (mui->reagent "TableHead"))
 (def table-row (mui->reagent "TableRow"))
 (def toolbar  (mui->reagent "Toolbar"))
 (def typography (mui->reagent "Typography"))
 
-;; text-fields are weird...
-;; https://github.com/reagent-project/reagent/blob/master/doc/examples/material-ui.md
 (def input-component
   (reagent/reactify-component
    (fn [props]
@@ -80,8 +83,6 @@
 
 (defn text-field [props & children]
   (let [internal-component (cond
-                             ;; FIXME: Autosize multiline field is broken.
-                             ;; Select doesn't require cursor fix so default can be used.
                              (or (:maxRows props)
                                  (:select props))
                              nil
