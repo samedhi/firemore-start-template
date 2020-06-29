@@ -1,20 +1,40 @@
-- Clojure.zip Viewer
+# zip-viewer
 
-- A way of viewing clojure data structures with clojure.zip
-- Separate views
-    - A undo/redo history view that lets you see your changes and figure out what you want to do.
-    - The actual data structure with the current focus and path to focus highlighted (the clojure.zip/root of the loc).
-    - The clojure.zip data structure itself with matching color coding to that on the original data structure.
-        - Option to either be "compact" or "exploded".
-    - A set of actions you can take from your current focus.
-        - Up
-        - Down
-        - Left
-        - Right
-        - Replace
-- Implementation
-    - clojure.zip
-    - re-frame
-Both to render to the screen and also because of its event system. The event system should allow me to trivially undo/redo with a simple history of all events.
-    - garden
-I have limited experience with this, but I would be interested in using it to try to style (colorize, bold, whatever) the text and get the spacing to occur for the exploded view. Maybe css flexbox or grid would help with this?
+## Usage
+
+TODO: FILL THIS IN
+
+## Contributions
+
+Pull Request are welcome... TODO: FILL THIS IN
+
+## Development
+
+This project uses [figwheel.main](https://figwheel.org/docs/) for development. Assuming that is setup then clone this project and cd into it.
+
+```
+>> git clone git@github.com:samedhi/zip-viewer.git
+>> cd zip-viewer
+```
+
+Then proceed using either the console or emacs.
+
+### Console
+
+```
+>> clj -m figwheel.main -b dev
+```
+
+### Emacs
+```
+emacs src/zip-viewer/core.cljs
+```
+From within emacs, type `M-x cider-jack-in-cljs` and then `Enter`. `figwheel-main` is your environment and `dev` is your build.
+
+### Result
+
+After a little time a browser will open with the app loaded within it. Editing any of the files under `/src` or the `resources/public/css/style.css` file should cause those files to be live-reloaded upon save. For more information please read the [figwheel.main](https://figwheel.org/docs/) docs (they are quite good).
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
