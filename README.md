@@ -1,4 +1,4 @@
-# zip-viewer
+# firemore-start-template
 
 ## Usage
 
@@ -13,8 +13,8 @@ Pull Request are welcome... TODO: FILL THIS IN
 This project uses [figwheel.main](https://figwheel.org/docs/) for development. Assuming that is setup then clone this project and cd into it.
 
 ```
->> git clone git@github.com:samedhi/zip-viewer.git
->> cd zip-viewer
+>> git clone git@github.com:samedhi/firemore-start-template.git
+>> cd firemore-start-template
 ```
 
 Then proceed using either the console or emacs.
@@ -27,7 +27,7 @@ Then proceed using either the console or emacs.
 
 ### Emacs
 ```
-emacs src/zip-viewer/core.cljs
+emacs src/firemore-start-template/core.cljs
 ```
 From within emacs, type `M-x cider-jack-in-cljs` and then `Enter`. `figwheel-main` is your environment and `dev` is your build.
 

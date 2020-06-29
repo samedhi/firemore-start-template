@@ -1,4 +1,4 @@
-(ns zip-viewer.util
+(ns firemore-start-template.util
   (:require
    [cljs.pprint :as pprint]))
 

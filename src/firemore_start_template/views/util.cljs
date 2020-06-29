@@ -1,8 +1,8 @@
-(ns zip-viewer.views.util
+(ns firemore-start-template.views.util
   (:require
    [re-frame.core :as re-frame]
-   [zip-viewer.mui :as mui]
-   [zip-viewer.subs :as subs]))
+   [firemore-start-template.mui :as mui]
+   [firemore-start-template.subs :as subs]))
 
 (defn code-block [o]
   [:pre {:class "code-block"}

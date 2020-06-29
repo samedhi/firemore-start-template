@@ -1,4 +1,4 @@
-(ns zip-viewer.mui
+(ns firemore-start-template.mui
   (:refer-clojure :exclude [list stepper])
   (:require
    [goog.object :as gobj]

@@ -1,13 +1,13 @@
-(ns ^:figwheel-hooks zip-viewer.core
+(ns ^:figwheel-hooks firemore-start-template.core
   (:require
    [firemore.core :as firemore]
    [goog.dom :as goog.dom]
    [reagent.dom :as reagent.dom]
    [re-frame.core :as re-frame]
-   [zip-viewer.breakpoints :as breakpoints]
-   [zip-viewer.events :as events]
-   [zip-viewer.subs :as subs]
-   [zip-viewer.views.root :as root]))
+   [firemore-start-template.breakpoints :as breakpoints]
+   [firemore-start-template.events :as events]
+   [firemore-start-template.subs :as subs]
+   [firemore-start-template.views.root :as root]))
 
 (defn mount-root []
   (when-let [el (goog.dom/getElement "app")]

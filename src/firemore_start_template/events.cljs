@@ -1,7 +1,7 @@
-(ns zip-viewer.events
+(ns firemore-start-template.events
   (:require
    [re-frame.core :as re-frame]
-   [zip-viewer.config :as config]))
+   [firemore-start-template.config :as config]))
 
 (re-frame/reg-event-db
  :initialize-db

@@ -1,9 +1,9 @@
-(ns zip-viewer.views.root
+(ns firemore-start-template.views.root
   (:require
    [re-frame.core :as re-frame]
-   [zip-viewer.mui :as mui]
-   [zip-viewer.views.util :as views.util]
-   [zip-viewer.util :as util]))
+   [firemore-start-template.mui :as mui]
+   [firemore-start-template.views.util :as views.util]
+   [firemore-start-template.util :as util]))
 
 (defn title []
   (let [greeting @(re-frame/subscribe [:greeting])]

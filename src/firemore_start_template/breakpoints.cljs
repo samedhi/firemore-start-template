@@ -1,8 +1,8 @@
-(ns zip-viewer.breakpoints
+(ns firemore-start-template.breakpoints
   (:require
    [breaking-point.core :as bp]
    [re-frame.core :as re-frame]
-   [zip-viewer.config :as config]))
+   [firemore-start-template.config :as config]))
 
 (def previous-breakpoints (atom nil))
 

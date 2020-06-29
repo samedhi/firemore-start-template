@@ -1,7 +1,7 @@
-(ns zip-viewer.subs
+(ns firemore-start-template.subs
   (:require
    [re-frame.core :as re-frame]
-   [zip-viewer.util :as util]))
+   [firemore-start-template.util :as util]))
 
 (re-frame/reg-sub
  :greeting
