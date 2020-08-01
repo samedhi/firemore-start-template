@@ -9,6 +9,8 @@
    [firemore-start-template.subs :as subs]
    [firemore-start-template.views.root :as root]))
 
+(enable-console-print!)
+
 (defn mount-root []
   (when-let [el (goog.dom/getElement "app")]
     (reagent.dom/render root/component el)))
