@@ -1,4 +1,4 @@
-(ns firemore-start-template.subs
+(ns firemore-start-template.subs.core
   (:require
    [re-frame.core :as re-frame]
    [firemore-start-template.util :as util]))

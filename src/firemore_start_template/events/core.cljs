@@ -1,4 +1,4 @@
-(ns firemore-start-template.events
+(ns firemore-start-template.events.core
   (:require
    [re-frame.core :as re-frame]
    [firemore-start-template.config :as config]))

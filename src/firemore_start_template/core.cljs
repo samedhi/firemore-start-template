@@ -5,8 +5,8 @@
    [reagent.dom :as reagent.dom]
    [re-frame.core :as re-frame]
    [firemore-start-template.breakpoints :as breakpoints]
-   [firemore-start-template.events :as events]
-   [firemore-start-template.subs :as subs]
+   [firemore-start-template.events.core :as events]
+   [firemore-start-template.subs.core :as subs]
    [firemore-start-template.views.root :as root]))
 
 (enable-console-print!)
