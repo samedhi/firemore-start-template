@@ -12,8 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Check for Environment Variables
-      if: ${{ secrets.FIREBASE_PROJECT == null || secrets.FIREBASE_PROJECT == null}}
+      if: ${{ $FIREBASE_PROJECT == null || $FIREBASE_PROJECT == null}}
       run: false
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
     - name: Grab the Clojure Installer Script
       run: curl -O https://download.clojure.org/install/linux-install-1.10.1.561.sh
     - name: Set permissions on Installer Script
