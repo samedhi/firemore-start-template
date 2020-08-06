@@ -1,0 +1,28 @@
+name: Master on Push
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build production code
+      run: clojure -m figwheel.main --optimizations advanced --build-once dev
+    - name: Build the public directory
+      run: cp -r resources/public public
+    - name: Create the code directory
+      run: mkdir public/cljs-out
+    - name: Copy the javascript to the code directory
+      run: cp target/public/cljs-out/dev-main.js public/cljs-out/
+    - name: Install firebase CLI
+      run:  sudo npm install -g firebase-tools
+    - name: Push to hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
+      run:  npx firebase deploy --project $FIREBASE_PROJECT
