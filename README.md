@@ -4,6 +4,10 @@ This is a template to quickly start web development with [Clojurescript](https:/
 
 Use this template by clicking on the big green button that says "Use this template" in the upper right corner.
 
+## Installing Clojure
+
+If you are new to Clojure, installation has become very easy. Follow instructions [here](https://clojure.org/guides/getting_started#_clojure_installer_and_cli_tools).
+
 ## Development (Live Editing)
 
 This project uses [figwheel.main](https://figwheel.org/docs/) for development. The [figwheel.main](https://figwheel.org/docs/) server can either be started directly from the console or emacs. 
