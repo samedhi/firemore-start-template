@@ -1,27 +1,17 @@
 # firemore-start-template
 
-## Usage
+This is a template to quickly start web development with [Clojurescript](https://clojurescript.org/) & [Firebase](https://firebase.google.com/). It uses [figwheel.main](https://figwheel.org/docs/) for live development and [cljs-test-runner](https://github.com/Olical/cljs-test-runner) for live testing. It uses [firemore](https://github.com/samedhi/firemore) to interact with [Firebase](https://firebase.google.com/). It also includes a small script allowing you to change the name of this project to something other than `firemore-start-template`.
 
-TODO: FILL THIS IN
-
-## Contributions
-
-Pull Request are welcome... TODO: FILL THIS IN
+Use this template by clicking on the big green button that says "Use this template" in the upper right corner.
 
 ## Development (Live Editing)
 
-This project uses [figwheel.main](https://figwheel.org/docs/) for development. Assuming that is setup then clone this project and cd into it.
-
-```
->> git clone git@github.com:samedhi/firemore-start-template.git
->> cd firemore-start-template
-```
-
-Then proceed using either the console or emacs.
+This project uses [figwheel.main](https://figwheel.org/docs/) for development. The [figwheel.main](https://figwheel.org/docs/) server can either be started directly from the console or emacs. 
 
 ### Console
 
 ```
+>> cd <this-project>
 >> clj -m figwheel.main -b dev
 ```
 
@@ -33,7 +23,7 @@ From within emacs, type `M-x cider-jack-in-cljs` and then `Enter`. `figwheel-mai
 
 ### Result
 
-After a little time a browser will open with the app loaded within it. Editing any of the files under `/src` or the `resources/public/css/style.css` file should cause those files to be live-reloaded upon save. For more information please read the [figwheel.main](https://figwheel.org/docs/) docs (they are quite good).
+After a little time a browser will open with this app loaded within it. Editing any of the files under `/src` or the `resources/public/css/style.css` file should cause those files to be live-reloaded upon save. For more information please read the [figwheel.main](https://figwheel.org/docs/) docs (they are quite good).
 
 ## Development (Testing on Save)
 
@@ -58,6 +48,10 @@ Now run the following in `<this-directory>`.
 `clojure -Atest -x chrome-headless --watch src --watch test`
 
 It will run the test once. It will re-run the test whenever any file is edited under either `/src` or `/test`. Feel free to add (or remove) locations under watch using the `--watch` argument.
+
+## Contributions
+
+Pull Request are very welcome.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
