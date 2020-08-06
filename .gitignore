@@ -13,3 +13,6 @@ pom.xml.asc
 .nrepl-port
 .cpcache/
 /.rebel_readline_history
+cljs-test-runner-out/
+node_modules/
+package-lock.json

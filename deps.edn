@@ -15,5 +15,7 @@
         }
  :aliases {:fig {:main-opts ["-m" "figwheel.main"]}
            :outdated {:extra-deps {antq/antq {:mvn/version "RELEASE"}}
-                      :main-opts ["-m" "antq.core"]}}
+                      :main-opts ["-m" "antq.core"]}
+           :test {:extra-deps {olical/cljs-test-runner {:mvn/version "3.7.0"}}
+                  :main-opts ["-m" "cljs-test-runner.main"]}}
  :paths ["src" "resources" "target"]}
