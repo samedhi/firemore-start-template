@@ -11,11 +11,6 @@ jobs:
     timeout-minutes: 5
     steps:
     - uses: actions/checkout@v1
-    - name: Check for Environment Variables
-      run: true && true
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
     - name: Grab the Clojure Installer Script
       run: curl -O https://download.clojure.org/install/linux-install-1.10.1.561.sh
     - name: Set permissions on Installer Script
