@@ -53,6 +53,18 @@ Now run the following in `<this-directory>`.
 
 It will run the test once. It will re-run the test whenever any file is edited under either `/src` or `/test`. Feel free to add (or remove) locations under watch using the `--watch` argument.
 
+## Continous Integration with Github Workflow
+
+**Warning: DO NOT SHARE YOU SECRETS WITH OTHERS. Your FIREBASE_TOKEN environment variable allows anyone to act as you with regard to firebase! **
+
+A "Push on Master" workflow has been included in `.github\workflows\master-push.yml` that will attempt to push your project to firebase hosting. This workflow requires that two secret variables be set within Github. Secrets can be set in the Github page for your project under `Project > Settings > Secrets`.
+
+You will need to add two environment variables named `FIREBASE_PROJECT` and `FIREBASE_TOKEN` within Secrets.
+* `FIREBASE_PROJECT` is the name of the firebase project that you want to deploy this project to. 
+* `FIREBASE_TOKEN` is your token that was generated from running `> firebase login:ci` from your terminal.
+
+Once these two environment variables are set then Github will automatically deploy your code to firebase on every push to master. The code is compiled with advanced compilation.
+
 ## Contributions
 
 Pull Request are very welcome.
