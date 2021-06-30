@@ -1,21 +1,21 @@
 {:deps {
-        breaking-point {:mvn/version "0.1.2"}
-        camel-snake-kebab {:mvn/version "0.4.1"}
-        cljsjs/material-ui {:mvn/version "4.9.12-0"}
+        breaking-point/breaking-point {:mvn/version "0.1.2"}
+        camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}
+        cljsjs/material-ui {:mvn/version "4.11.0-0"}
         cljsjs/material-ui-icons {:mvn/version "4.4.1-0"}
         com.andrewmcveigh/cljs-time {:mvn/version "0.5.2"}
-        com.bhauman/figwheel-main {:mvn/version "0.2.8"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.13"}
         com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
-        org.clojars.samedhi/firemore {:mvn/version "0.6.4"}
-        org.clojure/clojurescript {:mvn/version "1.10.773"}
-        re-frame {:mvn/version "0.12.0"}
-        re-pressed {:mvn/version "0.3.1"}
-        reagent {:mvn/version "1.0.0-alpha1"}
-        org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojars.samedhi/firemore {:mvn/version "0.6.5"}
+        org.clojure/clojure {:mvn/version "1.10.3"}
+        org.clojure/clojurescript {:mvn/version "1.10.866"}
+        re-frame/re-frame {:mvn/version "1.2.0"}
+        re-pressed/re-pressed {:mvn/version "0.3.1"}
+        reagent/reagent {:mvn/version "1.1.0"}
         }
  :aliases {:fig {:main-opts ["-m" "figwheel.main"]}
-           :outdated {:extra-deps {antq/antq {:mvn/version "RELEASE"}}
+           :outdated {:extra-deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
                       :main-opts ["-m" "antq.core"]}
-           :test {:extra-deps {olical/cljs-test-runner {:mvn/version "3.7.0"}}
+           :test {:extra-deps {olical/cljs-test-runner {:mvn/version "3.8.0"}}
                   :main-opts ["-m" "cljs-test-runner.main"]}}
  :paths ["src" "resources" "target"]}
