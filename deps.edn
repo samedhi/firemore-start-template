@@ -6,7 +6,7 @@
         com.andrewmcveigh/cljs-time {:mvn/version "0.5.2"}
         com.bhauman/figwheel-main {:mvn/version "0.2.13"}
         com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
-        org.clojars.samedhi/firemore {:mvn/version "0.6.6"}
+        org.clojars.samedhi/firemore {:mvn/version "0.6.8"}
         org.clojure/clojure {:mvn/version "1.10.3"}
         org.clojure/clojurescript {:mvn/version "1.10.866"}
         re-frame/re-frame {:mvn/version "1.2.0"}
